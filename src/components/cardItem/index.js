@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Card, Row} from "antd";
 
-const CardItem = ({image, name}) => {
+const CardItem = ({image, name, id, onSelectCard}) => {
     return (
         <Card
             hoverable
@@ -15,7 +15,7 @@ const CardItem = ({image, name}) => {
                 <p>{name}</p>
             </Row>
             <Row justify="center">
-                <Button type="primary" htmlType="submit">подробнее</Button>
+                <Button type="primary" onClick={() => onSelectCard(id)} htmlType="submit">подробнее</Button>
             </Row>
         </Card>
     );

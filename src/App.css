@@ -3,3 +3,11 @@
 .h100{
     height: calc(100vh - 64px);
 }
+
+.spin{
+    margin: 20px 0;
+    padding: 30px 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
